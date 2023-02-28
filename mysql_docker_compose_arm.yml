@@ -1,0 +1,24 @@
+# basic mysql docker compose
+version: '3.8'
+
+services:
+  db:
+    # select the image
+    image: arm64v8/mysql:oracle
+    # define custom container name
+    container_name: mysql_bva505e
+    # define port mappings
+    ports:
+      - "3306:3306"
+      - "33060:33060"
+    # define exposed ports
+    expose:
+      - "3306"
+      - "33060"
+    environment:
+      # password of your choice (since this is not a production environment, you can use a simple password)
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      # define the volume created in the previous step, in this example the persistent storage is located at
+      # /home/taylan/Documents/coursework/bva505e/db_data/mysql_bva505e
+      - /home/taylan/Documents/coursework/bva505e/db_data/mysql_bva505e:/var/lib/mysql
