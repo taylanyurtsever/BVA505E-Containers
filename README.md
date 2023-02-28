@@ -14,7 +14,11 @@ Container environments for Database Management and Big Data (BVA505E) course @ I
 
 2. Download or copy the corresponding docker compose yaml file.
 
-3. Using the cli (terminal) execute the following command in the same directory as the docker compose file:
+3. Create a folder for persistant storage of MySQL database.
+
+4. Edit the docker compose file according to instructions given in the comments.
+
+5. Using the cli (terminal) execute the following command in the same directory as the docker compose file:
 ```
 docker compose -f mysql-compose.yml up
 ```
