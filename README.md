@@ -68,6 +68,6 @@ mysql -h localhost -P 3306 -p < /var/lib/mysql/database.sql
 + **Username:** root
 + **Password:** password specified inside the docker compose file (by default: password)
 
-**Optional** - Click on connection details button to specify a unique name for the connection
+**Optional** - Click on connection details button to specify a unique name for the connection.
 
 3. Click on finish to complete the setup process. The database should be available on the database connection directory on the left.
