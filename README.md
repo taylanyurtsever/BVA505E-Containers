@@ -70,4 +70,6 @@ mysql -h localhost -P 3306 -p < /var/lib/mysql/database.sql
 
 **Optional** - Click on connection details button to specify a unique name for the connection.
 
-3. Click on finish to complete the setup process. The database should be available on the database connection directory on the left.
+3. In the driver properties section set the **allowPublicKeyRetrieval** value to **true**.
+
+4. Click on finish to complete the setup process. The database should be available on the database connection directory on the left.
